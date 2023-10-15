@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="179dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="80dp"
+        android:autoSizeTextType="none"
+        android:background="@color/teal_700"
+        android:enabled="false"
+        android:text="Continuar"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/aceptarTerminos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="409dp"
+        android:layout_height="303dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/dash_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="236dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="56dp"
+        android:autoSizeTextType="uniform"
+        android:text="Bienvenido"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#EAEAEA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="56dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/uni_launcher_foreground" />
+
+    <CheckBox
+        android:id="@+id/aceptarTerminos"
+        android:layout_width="362dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="96dp"
+        android:autoSizeTextType="uniform"
+        android:text="Aceptas nuestros terminos de uso y condiciones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Aceptas nuestros terminos de uso y condiciones" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

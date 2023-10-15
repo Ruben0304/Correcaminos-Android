@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/prestamo"
+        android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+        android:title="Prestamo" />
+    <item
+        android:id="@+id/estado"
+        android:icon="@drawable/ic_baseline_check_circle_24"
+        android:title="Estado" />
+    <item
+        android:id="@+id/tramites"
+        android:icon="@drawable/ic_baseline_article_24"
+        android:title="Tramites" />
+    <item
+        android:id="@+id/entrar"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Entrar" />
+    <item
+        android:id="@+id/mas"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="Mas" />
+</menu>
