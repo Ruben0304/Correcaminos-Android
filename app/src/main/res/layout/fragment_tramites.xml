@@ -10,14 +10,43 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="237dp"
-            android:layout_height="283dp"
-            android:src="@drawable/ic_baseline_question_mark_24"
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="179dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="96dp"
+            android:autoSizeTextType="none"
+            android:background="@color/black"
+            android:enabled="true"
+            android:text="Solicitar Licencia"
+            app:cornerRadius="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="179dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="208dp"
+            android:autoSizeTextType="none"
+            android:background="@color/material_dynamic_primary20"
+            android:enabled="true"
+            android:text="Solicitar Baja"
+            app:cornerRadius="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="313dp"
+            android:layout_height="646dp"
+            android:layout_marginBottom="188dp"
+            android:src="@drawable/bf9ecdb5d13c6f816e89753c55e4e6da"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

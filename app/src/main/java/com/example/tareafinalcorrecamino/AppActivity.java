@@ -9,8 +9,10 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Switch;
 
+import com.bumptech.glide.Glide;
 import com.example.tareafinalcorrecamino.databinding.ActivityAppBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -25,8 +27,6 @@ public class AppActivity extends AppCompatActivity {
 
 
 
-
-
         getSupportActionBar().hide();
 
         binding = ActivityAppBinding.inflate(getLayoutInflater());
@@ -36,14 +36,14 @@ public class AppActivity extends AppCompatActivity {
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
             switch (item.getItemId()) {
-                case R.id.entrar:
-                    replaceFragment(new LoginFragment());
-                    break;
-                case R.id.mas:
+                case R.id.ajustes:
                     replaceFragment(new MasFragment());
                     break;
-                case R.id.tramites:
+                case R.id.solicitar:
                     replaceFragment(new TramitesFragment());
+                    break;
+                case R.id.perfil:
+                    replaceFragment(new PerfilFragment());
             }
 
             return true;
